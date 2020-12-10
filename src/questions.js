@@ -22,11 +22,14 @@ var reverseWordsInArray = function(array) {
 }
 
 var everyPossiblePair = function(array) {
-    return 'Write your method here';
+    const result = array.map(item => item)
+    console.log(result)
+    return result;
 }
 
 var allElementsExceptFirstThree = function(array) {
-    return 'Write your method here';
+    
+    return array.filter(item => array.indexOf(item)>2)
 }
 
 var addElementToBeginning = function(array, element) {
