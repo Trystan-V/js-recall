@@ -6,19 +6,19 @@ var selectElementsStartingWithVowel = function(array) {
     // return startWithVowel = array.filter((item) => {if (item.charAt(0) == "a"||item.charAt(0) == "i" || item.charAt(0) == "o"){
     //     return array;
     // }}
-    return (array.filter(word=>word.charAt(0).match("[aeiouy]")));
+    return (array.filter(word => word.charAt(0).match("[aeiouy]")));
 }
 
 var removeNullElements = function(array) {
-    return 'Write your method here';
+   return array.filter((val) => val !== null);
 }
 
 var removeNullAndFalseElements = function(array) {
-    return 'Write your method here';
+    return array.filter((val) => val !== null && val !== false);
 }
 
 var reverseWordsInArray = function(array) {
-    return 'Write your method here';
+    return array.map(item => item.split('').reverse().join(''));
 }
 
 var everyPossiblePair = function(array) {
