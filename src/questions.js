@@ -1,9 +1,12 @@
 var selectElementsStartingWithA = function(array) {
-    return 'Write your method here';
+    return startWithA = array.filter((item) => item.startsWith("a"));
 }
 
 var selectElementsStartingWithVowel = function(array) {
-    return 'Write your method here';
+    // return startWithVowel = array.filter((item) => {if (item.charAt(0) == "a"||item.charAt(0) == "i" || item.charAt(0) == "o"){
+    //     return array;
+    // }}
+    return (array.filter(word=>word.charAt(0).match("[aeiouy]")));
 }
 
 var removeNullElements = function(array) {
